@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0"> 
+    <title>Document</title> 
+<link rel="stylesheet" href="data.css"/>  
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+      $('.box1').hover(
+        function() {
+          $(this).addClass('active');   
+        }, 
+        function() {
+          $(this).removeClass('active');   
+        }
+      );
+    });
+
+    function toggleInfo(element) {
+    const info = element.querySelector('.additional-info');
+    info.style.display = info.style.display === 'block' ? 'none' : 'block';
+    element.classList.toggle('active');
+}
+
+  </script>
+ 
+</script>
+
+<body>
+     
+    <div class="line-container">
+        <div class="line"></div>
+       <h2> <span class="text" style="color:rgb(252, 59, 175)">YAY! It's BOGO</span></h2>
+        <div class="line"></div>
+    </div>
+    <!--Box1-->
+    <center>
+        <div class="box1" >
+        <span class="radiobutton">
+            <input type="radio" id="1unit" value="1 Unit" name="unit">
+            <label for="1unit"><b>1 Unit</b></label>
+        </span>        <span><button type="submit" class="button">10% Off</button></span> 
+        <span class="price"><b>$10.00 USD </b> </span><br/> 
+        <span  >Standard Price</span>  
+        <span style="font-weight: 300;" class="originalprice">$24.00 USD</span><br/>  
+        <div class="additional-info">  
+            <table class="table1">
+                <tr>
+                    <th> </th>
+                    <th >Size</th>
+                    <th>Color</th>
+                </tr>
+            <tr>
+                <td>#1</td>
+                <td> 
+                    <select id="size-select" >
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  >
+                        <option name="color" value="color">Color</option>
+                        <option name="black" value="black">Black</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td> 
+                    <select id="size-select" >  
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  > 
+                        <option name="black" value="black">Black</option>
+                        <option name="color" value="color">Color</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr> 
+            </table> 
+    </div>
+</center>
+<!--Box2-->
+<center>
+    <div class="box1"  >
+        <div class="most-popular">MOST POPULAR</div>
+        <span class="radiobutton">
+            <input type="radio" id="1unit" value="2 Unit" name="unit">
+            <label for="2unit"><b>2 Unit</b></label>
+        </span>        <span><button type="submit" class="button">20% Off</button></span> 
+        <span class="price"><b>$18.00 USD </b> </span><br/> 
+        <span> </span>  
+        <span  class="originalprice2" style="font-weight: 300;">$24.00 USD</span><br/>  
+        <div class="additional-info">  
+            <table class="table1">
+                <tr>
+                    <th> </th>
+                    <th >Size</th>
+                    <th>Color</th>
+                </tr>
+            <tr>
+                <td>#1</td>
+                <td> 
+                    <select id="size-select" >
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  >
+                        <option name="color" value="color">Color</option>
+                        <option name="black" value="black">Black</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td> 
+                    <select id="size-select" >  
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  > 
+                        <option name="black" value="black">Black</option>
+                        <option name="color" value="color">Color</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr> 
+            </table> 
+    </div>
+</center>
+<!--Box3-->
+<center>
+    <div class="box1"  >
+        <span class="radiobutton">
+            <input type="radio" id="1unit" value="2 Unit" name="unit">
+            <label for="2unit"><b>3 Unit</b></label>
+        </span>        <span><button type="submit" class="button">30% Off</button></span> 
+        <span class="price"><b>$24.00 USD </b> </span><br/> 
+        <span> </span>  
+        <span  class="originalprice2" style="font-weight: 300;">$24.00 USD</span><br/>  
+        <div class="additional-info">  
+            <table class="table1">
+                <tr>
+                    <th> </th>
+                    <th >Size</th>
+                    <th>Color</th>
+                </tr>
+            <tr>
+                <td>#1</td>
+                <td> 
+                    <select id="size-select" >
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  >
+                        <option name="color" value="color">Color</option>
+                        <option name="black" value="black">Black</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td> 
+                    <select id="size-select" >  
+                        <option name="S" value="S">S</option>
+                        <option name="M" value="M">M</option>
+                        <option name="L" value="L">L</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="size-select"  > 
+                        <option name="black" value="black">Black</option>
+                        <option name="color" value="color">Color</option>
+                        <option name="white" value="white">White</option>
+                    </select> 
+                </td> 
+            </tr> 
+            </table> 
+    </div>
+</center>  
+  
+     <b><span class="freedelivery" >Free Delivery</span></b>  
+     <b><span   style="color:black; margin-left: 150px;font-size: 20px;">Total: $ 18.00 USD</span></b> 
+     <br><br><br>
+  
+ 
+<button type="submit" id="submitbtn" value="submit"> + Add to Card </button>
+ <p class="pumper" style="font-weight:lighter;"><i>@Powered by pumper</i></p>
+
+    </div>
+</body>
+</html>
